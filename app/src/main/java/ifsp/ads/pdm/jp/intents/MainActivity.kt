@@ -23,10 +23,11 @@ class MainActivity : AppCompatActivity() {
     private lateinit var urlArl : ActivityResultLauncher<Intent>
     private lateinit var permissionToCallArl : ActivityResultLauncher<String>
     private lateinit var takeImageArl : ActivityResultLauncher<Intent>
-    private lateinit var chooserArl : ActivityResultLauncher<Intent>
+    //private lateinit var chooserArl : ActivityResultLauncher<Intent>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        amb = ActivityMainBinding.inflate(layoutInflater)
         setContentView(amb.root)
         supportActionBar?.subtitle = "MainActivity"
 
